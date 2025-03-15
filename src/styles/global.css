@@ -1,0 +1,364 @@
+/* Landing Page Background */
+.home-page {
+  position: relative;
+  background: url("../assets/communion.jpeg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Dark Overlay for Better Readability */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Content Styling */
+.home-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+/* Button Styling */
+.explore-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+  background-color: #f8d210;
+  color: black;
+}
+
+/* About Page Styles */
+.about-page {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Title Styling */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.about-title span {
+  color: #007bff;
+}
+
+/* Text Styling */
+.about-text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Cards */
+.about-card {
+  background: #f8f9fa;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling */
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Events Page */
+.events-page {
+  text-align: center;
+}
+
+/* Event Cards */
+.event-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+}
+
+/* Event Title */
+.event-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Event Category Styling */
+.event-category {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.religious {
+  background-color: #ff9800;
+  color: white;
+}
+
+.social {
+  background-color: #03a9f4;
+  color: white;
+}
+
+.charity {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Filter Dropdown */
+.filter-dropdown {
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Event Form Container */
+.event-form-card {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Ensure custom styles override Bootstrap */
+.form-control.custom-input {
+  border-radius: 8px;
+  border: 2px solid #ddd !important;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control.custom-input:focus {
+  border-color: #007bff !important;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2) !important;
+  outline: none !important;
+}
+
+/* Submit Button */
+.submit-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+/* header css */
+.custom-navbar {
+  background: linear-gradient(to right, #111, #222);
+}
+
+.custom-navbar {
+  background-color: #222; /* Dark background */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+body {
+  padding-top: 75px; /* Prevent content from being hidden behind navbar */
+}
+
+
+/* Navbar Links */
+.nav-link-custom {
+  color: white !important;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover {
+  color: #f1c40f !important;
+  transform: scale(1.1);
+}
+
+/* Active Link Styling */
+.nav-link-custom.active {
+  border-bottom: 2px solid #f1c40f;
+}
+
+/* ✅ Fix for Events Dropdown Hover */
+.nav-dropdown-custom .dropdown-toggle {
+  color: white !important;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-dropdown-custom .dropdown-toggle:hover {
+  color: #f1c40f !important; /* ✅ Changes color to yellow on hover */
+}
+
+/* Dropdown Menu */
+.nav-dropdown-custom .dropdown-menu {
+  background-color: #222;
+  border: none;
+  padding: 10px;
+  right: 0 !important; /* ✅ Forces dropdown to align left */
+  left: auto !important;
+  transform-origin: top right; /* Ensures smooth animation */
+}
+
+.nav-dropdown-custom .dropdown-item {
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-dropdown-custom .dropdown-item:hover {
+  background-color: #f1c40f;
+  color: #111;
+  font-weight: bold;
+}
+
+/* conversation css */
+.join-conversation {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.image-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.stats-card {
+  border: none;
+  background: linear-gradient(to right, #ffcc00, #ff6600);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+/* communion css */
+.why-communion {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.feature-card {
+  transition: transform 0.3s ease-in-out;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.learn-more-btn {
+  transition: 0.3s ease-in-out;
+}
+
+.learn-more-btn:hover {
+  background-color: #ffcc00;
+  color: #111;
+}
+
+/* unity commuinity */
+.uniting-communities {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.stats-card {
+  border: none;
+  background: linear-gradient(to right, #ffcc00, #ff6600);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Daily Engagement css*/
+.daily-engagements {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.feature-card {
+  transition: transform 0.3s ease-in-out;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* moments jsx */
+.moments-of-connection {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.moment-card {
+  transition: transform 0.3s ease-in-out;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  border-width: 4px !important;
+}
+
+.moment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.moment-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
