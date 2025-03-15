@@ -38,14 +38,16 @@ export default function Events() {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        const storedEvents = JSON.parse(localStorage.getItem("events"));
-        if (storedEvents) {
-            setEvents([...storedEvents, ...defaultEvents]);
-        } else {
-            setEvents(defaultEvents);
-            localStorage.setItem("events", JSON.stringify(defaultEvents));
-        }
+        const storedEvents = JSON.parse(localStorage.getItem("events")) || [];
+    
+        // ✅ Remove duplicates based on `title`
+        const mergedEvents = [...storedEvents, ...defaultEvents];
+        const uniqueEvents = Array.from(new Map(mergedEvents.map(event => [event.title, event])).values());
+    
+        setEvents(uniqueEvents);
+        localStorage.setItem("events", JSON.stringify(uniqueEvents));
     }, []);
+    
 
     const [filter, setFilter] = useState("All");
     const filteredEvents = filter === "All" ? events : events.filter(event => event.category === filter);
