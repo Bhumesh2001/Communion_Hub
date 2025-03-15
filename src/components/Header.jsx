@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import CommunionHubLogo from "../assets/communionhublogo.png";
+// import CommunionHubLogo from "/assets/communionhublogo.png";
 
 export default function Header() {
     const location = useLocation(); // To highlight active link
@@ -10,7 +10,7 @@ export default function Header() {
             <Container>
                 {/* Brand Name */}
                 <Navbar.Brand as={Link} to="/" className="fw-bold text-white fs-4">
-                    <img src={CommunionHubLogo} className="img-fluid" width={150} alt="CommunionHub Logo" />
+                    <img src="/communionhublogo.png" className="img-fluid" width={150} alt="CommunionHub Logo" />
                 </Navbar.Brand>
 
                 {/* Responsive Toggle Button */}

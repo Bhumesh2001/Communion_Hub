@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
-import unityImg from "../assets/unity_img.avif";
+// import unityImg from "/assets/unity_img.avif";
 
 export default function UnitingCommunities() {
     return (
@@ -21,7 +21,7 @@ export default function UnitingCommunities() {
                     </Button>
                 </Col>
                 <Col md={6}>
-                    <img src={`${unityImg}`} alt="Event" width={250} className="img-fluid rounded shadow-lg" />
+                    <img src="/unity_img.avif" alt="Event" width={250} className="img-fluid rounded shadow-lg" />
                 </Col>
             </Row>
 

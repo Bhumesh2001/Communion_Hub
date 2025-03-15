@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
-import communityImg1 from "../assets/conversation.avif";
+// import communityImg1 from "../assets/conversation.avif";
 
 export default function JoinConversation() {
     return (
@@ -16,7 +16,7 @@ export default function JoinConversation() {
                 <Col md={6}>
                     <div className="image-container">
                         <img
-                            src={`${communityImg1}`}
+                            src='/conversation.avif'
                             alt="Community 1"
                             className="img-fluid rounded shadow-lg"
                         />

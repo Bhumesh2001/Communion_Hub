@@ -1,40 +1,40 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import momentImge1 from "../assets/moment1img.jpg";
-import momentImge2 from "../assets/moment2img.avif";
-import momentImge3 from "../assets/moment3img.avif";
-import momentImge4 from "../assets/moment4img.avif";
-import momentImge5 from "../assets/moment5img.avif";
+// import momentImge1 from "/assets/moment1img.jpg";
+// import momentImge2 from "/assets/moment2img.avif";
+// import momentImge3 from "/assets/moment3img.avif";
+// import momentImge4 from "/assets/moment4img.avif";
+// import momentImge5 from "/assets/moment5img.avif";
 
 const moments = [
     {
         title: "Shared Service Projects",
         description: "Make a difference by joining hands to support impactful projects that uplift communities and bring positive change.",
         variant: "primary",
-        image: momentImge1
+        image: "/moment1img.jpg"
     },
     {
         title: "Community Celebrations",
         description: "Experience the joy of shared festivities as we honor traditions, embrace diversity, and strengthen communal bonds.",
         variant: "success",
-        image: momentImge2
+        image: "/moment2img.avif"
     },
     {
         title: "Volunteer Gatherings",
         description: "Join like-minded individuals in meaningful initiatives, giving back to communities and building lasting connections.",
         variant: "warning",
-        image: momentImge3
+        image: "/moment3img.avif"
     },
     {
         title: "Cultural Exchanges",
         description: "Explore unique traditions, cuisines, and stories, building bridges across diverse cultures and backgrounds.",
         variant: "info",
-        image: momentImge4
+        image: "/moment4img.avif"
     },
     {
         title: "Analytics and Reporting",
         description: "Our cutting-edge social media marketing tactics will help you maximize your brand's online visibility and expand your business exponentially.",
         variant: "danger",
-        image: momentImge5
+        image: "/moment5img.avif"
     }
 ];
 
