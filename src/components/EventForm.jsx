@@ -18,26 +18,27 @@ export default function EventForm({ onAddEvent }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    
+
         // Get existing events from localStorage
         const existingEvents = JSON.parse(localStorage.getItem("events")) || [];
-    
+
         // Add new event
         const updatedEvents = [...existingEvents, formData];
-    
+
         // Save updated events back to localStorage
         localStorage.setItem("events", JSON.stringify(updatedEvents));
-    
-        // Update the parent state
-        onAddEvent(updatedEvents);
-    
+
+        // ✅ Send only the new event, not the entire array
+        onAddEvent(formData);
+
         // Show success modal
         setShowModal(true);
-    
+
         // Reset form
         setFormData({ title: "", date: "", category: "Social", location: "", description: "" });
     };
-    
+
+
     return (
         <>
             <Card className="event-form-card p-4 my-4">
